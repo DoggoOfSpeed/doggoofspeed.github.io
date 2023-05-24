@@ -2764,13 +2764,6 @@ zodis = ExtResource( 6 )
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 180 )
 
-[node name="raudona2" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 1.86265e-09, 0, 1, 0, -1.86265e-09, 0, 1, -0.519562, 35.592, 0.226115 )
-visible = false
-light_energy = 0.3
-shadow_enabled = true
-omni_range = 100.099
-
 [node name="zalia" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.3796, 17.796, 0 )
 light_color = Color( 0.168627, 1, 0, 1 )

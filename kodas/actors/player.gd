@@ -10,8 +10,10 @@ onready var hudtxt = $CanvasLayer/hud/Label
 onready var galva = $Camera
 onready var cast = $Camera/RayCast
 
-#func _ready():
-	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$CanvasLayer/hud.connect("lmbpress", self, "fgood") 
+	$CanvasLayer/hud.connect("rmbpress", self, "fbad") 
 	
 func _physics_process(_delta):
 	galva.rotation_degrees.x = lokrot.x
@@ -48,4 +50,3 @@ func fgood():
 				pts -= 1
 			target.queue_free()
 			hudtxt.text = str(pts);
-	
