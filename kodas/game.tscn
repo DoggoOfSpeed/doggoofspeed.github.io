@@ -2767,7 +2767,6 @@ environment = SubResource( 180 )
 [node name="zalia" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.3796, 17.796, 0 )
 light_color = Color( 0.168627, 1, 0, 1 )
-light_energy = 2.0
 shadow_enabled = true
 omni_range = 41.4351
 omni_shadow_mode = 0
@@ -2782,7 +2781,6 @@ omni_shadow_mode = 0
 [node name="raudona" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.833241, 17.796, 35.4361 )
 light_color = Color( 1, 0, 0, 1 )
-light_energy = 2.0
 shadow_enabled = true
 omni_range = 43.3783
 omni_shadow_mode = 0
@@ -2790,7 +2788,6 @@ omni_shadow_mode = 0
 [node name="geltona" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.833241, 17.796, -41.2735 )
 light_color = Color( 0.945098, 1, 0, 1 )
-light_energy = 2.0
 shadow_enabled = true
 omni_range = 39.5645
 omni_shadow_mode = 0
