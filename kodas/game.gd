@@ -136,6 +136,7 @@ func _ready():
 
 
 func _on_Timer_timeout():
+	$Timer.wait_time -= 0.04
 	randomize()
 	while i == last:
 		i = randi()%4

@@ -3,7 +3,7 @@ extends Control
 signal lmbpress
 signal rmbpress
 
-var sec = 185
+var sec = 184
 
 func _ready():
 	$Label.text = "0";
@@ -22,6 +22,9 @@ func _on_RMB_button_down():
 
 
 func _on_Timer_timeout():
+	if sec == 1:
+		$End/Label2.text = "Taškai: " + $Label.text
+		$AnimationPlayer.play("End")
 	sec -= 1
 	$Label2.text = ("%02d:%02d" % [sec/60, sec%60])
 	pass # Replace with function body.
