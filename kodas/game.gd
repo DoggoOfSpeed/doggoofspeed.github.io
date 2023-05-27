@@ -159,4 +159,9 @@ func _on_Timer_timeout():
 	if i == 3:
 			mok.transform = $Spatial/Spawn4.transform
 	add_child(mok)
-	pass 
+	pass
+
+func _on_Area_body_entered(body):
+	body.queue_free()
+	$player.pts -= 1
+	pass
